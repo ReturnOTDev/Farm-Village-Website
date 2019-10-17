@@ -230,9 +230,10 @@ section.landing {
 	}
 }
 .amenity-icons {
+	width: 80%;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
 }
 .icon-column {
 	display: flex;
