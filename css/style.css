@@ -301,7 +301,7 @@ section.landing nav {
 }
 
 .icon {
-  margin: 0 6vw;
+  padding: 0 12%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
