@@ -235,19 +235,25 @@ section.landing nav {
 }
 
 @-webkit-keyframes fadeOut {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  50% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
   }
 }
 
 @keyframes fadeOut {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  50% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
   }
 }
