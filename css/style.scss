@@ -260,14 +260,13 @@ section.landing {
 	border-radius: 2.5px;
 	margin: 0 auto;
 	display: flex;
-	width: 70%;
 	overflow: hidden;
 }
 
 .carousel-slide {
 	display: flex;
 	img {
-		height: 10rem;
+		width: 70vw;
 	}
 }
 

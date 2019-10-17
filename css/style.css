@@ -338,7 +338,6 @@ section.landing nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
   overflow: hidden;
 }
 
@@ -349,7 +348,7 @@ section.landing nav {
 }
 
 .carousel-slide img {
-  height: 10rem;
+  width: 70vw;
 }
 
 .gallery {
