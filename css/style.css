@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+p,
+h1,
+h2,
+button {
+  letter-spacing: 0.075rem;
+}
+
+p {
+  line-height: 2rem;
+}
+
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+  font-family: "Raleway", serif;
+  margin-bottom: 2rem;
+}
+
+hr {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  color: #aa7a04;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.book-btn,
+.about-btn {
+  border: none;
+  border-radius: 2.5px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: white;
+  background: #d6a65d;
+  width: 47.5%;
+  padding: 0.5rem 0;
+}
+
+.big-gap {
+  margin-bottom: 10rem;
+}
+
+.small-gap {
+  margin-bottom: 5rem;
+}
+
+.between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing-background-mobile {
+  background-image: url("/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.landing-background-mobile::after {
+  content: " ";
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(black));
+  background: linear-gradient(top, rgba(0, 0, 0, 0.7), black);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+section.landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  height: 100vh;
+}
+
+section.landing header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 4rem;
+}
+
+section.landing header nav,
+section.landing header .contact-info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.landing header .contact-info div {
+  opacity: 0.6;
+}
+
+section.landing header .contact-info div:first-child {
+  margin-bottom: 1rem;
+}
+
+section.landing header p {
+  margin-left: 1rem;
+}
+
+section.landing nav {
+  font-size: 1.4rem;
+}
+
+.landing-main {
+  text-align: center;
+}
+
+.landing-main h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4.3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.landing-main h2 {
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin-bottom: 4rem;
+}
+
+.landing-main button {
+  margin-bottom: 10rem;
+}
+
+.landing-main .arrow {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.title p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.rooms {
+  margin-top: 5rem;
+  position: relative;
+}
+
+.rooms hr {
+  width: 4rem;
+}
+
+#roomNext,
+#roomPrev {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  background: 0;
+  border: 0;
+  font-size: 1.5rem;
+  color: #aa7a04;
+}
+
+#roomPrev {
+  left: 0;
+}
+
+.about-btn {
+  color: black;
+  font-weight: normal;
+  border: 1.5px solid #aa7a04;
+  background: none;
+}
+
+.room-carousel-container {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.room-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.room-option {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 25rem;
+  margin-bottom: 4rem;
+}
+
+.room-option .gold-frame {
+  background: transparent;
+  border: 1.5px solid #aa7a04;
+  position: relative;
+  height: 10rem;
+  width: 15rem;
+  border-radius: 2.5px;
+  margin-bottom: 2rem;
+}
+
+.room-option .gold-frame img {
+  width: 15rem;
+  border-radius: 2.5px;
+  -webkit-transform: translate(0.5rem, 0.5rem);
+          transform: translate(0.5rem, 0.5rem);
+}
+
+.amenities hr {
+  width: 6rem;
+}
+
+.amenity-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.icon {
+  margin: 0 6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.icon img {
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon p {
+  color: #aa7a04;
+}
+
+.gallery hr {
+  width: 7rem;
+}
+
+.carousel-container {
+  border-radius: 2.5px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel-slide img {
+  height: 10rem;
+}
+
+.gallery {
+  position: relative;
+}
+
+.gallery button {
+  position: absolute;
+  height: 10rem;
+  bottom: 0;
+  background: none;
+  border: none;
+  color: #aa7a04;
+  font-size: 1.5rem;
+}
+
+.gallery #nextBtn {
+  right: 5%;
+}
+
+.gallery #prevBtn {
+  left: 5%;
+}
+/*# sourceMappingURL=style.css.map */

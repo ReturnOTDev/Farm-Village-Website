@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46.38" height="40" viewBox="0 0 46.38 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="46.381" height="40" fill="#caa368"/>
+    </clipPath>
+  </defs>
+  <g id="tv" clip-path="url(#clip-path)">
+    <path id="Path_16" data-name="Path 16" d="M41.742,0H4.638A4.606,4.606,0,0,0,0,4.545v25a5.821,5.821,0,0,0,4.549,5.437L14.687,36.97S5.961,40,11.6,40h23.19c5.635,0-3.092-3.03-3.092-3.03l10.139-1.987a5.821,5.821,0,0,0,4.548-5.437v-25A4.606,4.606,0,0,0,41.742,0Zm0,29.318H4.638V4.091h37.1Z" fill="#caa368"/>
+  </g>
+</svg>
