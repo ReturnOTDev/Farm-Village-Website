@@ -164,25 +164,25 @@ section.landing nav {
 
 .landing-main h1 {
   font-family: "Playfair Display", serif;
-  font-size: 4.3rem;
+  font-size: 5.3rem;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 .landing-main h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 200;
   margin-bottom: 4rem;
 }
 
 .landing-main button {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .landing-main .arrow {
   display: block;
   margin: 0 auto;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .title {
