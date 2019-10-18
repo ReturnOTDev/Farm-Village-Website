@@ -52,6 +52,11 @@ hr {
 	background: $gold-light;
 	width: 47.5%;
 	padding: 0.5rem 0;
+	cursor: pointer;
+}
+#menuBtn {
+	background: 0;
+	border: 0;
 }
 .big-gap {
 	margin-bottom: 10rem;
@@ -71,18 +76,18 @@ hr {
 	background-image: url("/assets/background.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 100vh;
+	background-position-y: bottom;
+	height: 90vh;
 	width: 100vw;
 	position: absolute;
 	z-index: -1;
 
 	&::after {
 		content: " ";
-		background: linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.95));
 		width: 100vw;
-		height: 100vh;
+		height: 90vh;
 		position: absolute;
-		opacity: 0.8;
 		z-index: -1;
 	}
 }
@@ -94,7 +99,7 @@ section.landing {
 	flex-direction: column;
 	justify-content: space-between;
 	color: white;
-	height: 100vh;
+	height: 90vh;
 
 	header {
 		display: flex;
@@ -107,10 +112,7 @@ section.landing {
 			align-items: center;
 		}
 		.contact-info div {
-			opacity: 0.6;
-			&:first-child {
-				margin-bottom: 1rem;
-			}
+			opacity: 0.8;
 		}
 		p {
 			margin-left: 1rem;
@@ -156,6 +158,9 @@ section.landing {
 	}
 }
 
+.menu {
+	height: 1.5rem;
+}
 // rooms slider
 
 .rooms {
@@ -269,6 +274,7 @@ section.landing {
 	margin: 0 auto;
 	display: flex;
 	overflow: hidden;
+	width: 70vw;
 }
 
 .carousel-slide {
@@ -294,5 +300,50 @@ section.landing {
 	}
 	#prevBtn {
 		left: 5%;
+	}
+}
+
+// footer
+
+footer {
+	background-color: #373737;
+	padding: 2rem 0;
+	color: white;
+	p {
+		max-width: 14rem;
+		line-height: 2rem;
+		span {
+			font-weight: bold;
+		}
+		opacity: 0.6;
+	}
+}
+.social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	img {
+		margin-bottom: 2rem;
+		height: 1.5rem;
+		opacity: 0.6;
+		&:last-of-type {
+			margin: 0;
+		}
+	}
+}
+
+.footer-last {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	opacity: 0.8;
+	img:first-of-type {
+		width: 20rem;
+		margin-top: 2rem;
+	}
+	img:last-of-type {
+		width: 10rem;
+		margin-top: 2rem;
 	}
 }

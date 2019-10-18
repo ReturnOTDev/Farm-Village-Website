@@ -13,7 +13,6 @@ const carousel = () => {
 
 	const size = carouselImages[0].clientWidth;
 
-	carouselContainer.style.width = `${size}px`;
 	carouselSlide.style.transform = `translateX(${-size * counter}px)`;
 
 	// Button Listeners
@@ -44,9 +43,6 @@ const carousel = () => {
 		}
 	});
 };
-
-carousel();
-
 const carouselRoom = () => {
 	const roomOptions = document.querySelectorAll(".room-option");
 	const roomCarousel = document.querySelector(".room-carousel");
@@ -99,4 +95,5 @@ const carouselRoom = () => {
 	});
 };
 
+carousel();
 carouselRoom();
