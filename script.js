@@ -1,3 +1,6 @@
+let windowWidth = window.width;
+
+
 const carousel = () => {
 	const carouselSlide = document.querySelector(".carousel-slide");
 	const carouselImages = document.querySelectorAll(".carousel-slide img");
@@ -11,10 +14,15 @@ const carousel = () => {
 
 	let counter = 1;
 
-	const size = carouselImages[0].clientWidth;
+	let size = carouselImages[0].clientWidth;
 
 	carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-
+	 
+	const widthChange = ()=> {
+		if (window.width != windowWidth) {
+			
+		}
+	}
 	// Button Listeners
 
 	nextBtn.addEventListener("click", () => {
@@ -53,12 +61,12 @@ const carouselRoom = () => {
 	// Buttons
 	const next = document.querySelector("#roomNext");
 	const prev = document.querySelector("#roomPrev");
-	const size = roomOptions[0].clientWidth;
+	let size = roomOptions[0].clientWidth;
+	roomCarouselContainer.style.width = `${size}px`;
 
 	// Counter
 	let counter = 1;
 
-	roomCarouselContainer.style.width = `${size}px`;
 	roomCarousel.style.transform = `translateX(-${size}px)`;
 
 	// function to move the slider

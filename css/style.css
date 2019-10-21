@@ -65,6 +65,7 @@ hr {
 #menuBtn {
   background: 0;
   border: 0;
+  margin: 0;
 }
 
 .big-gap {
@@ -136,7 +137,6 @@ section.landing header {
   padding-top: 4rem;
 }
 
-section.landing header nav,
 section.landing header .contact-info div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,10 +144,7 @@ section.landing header .contact-info div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-section.landing header .contact-info div {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 section.landing header p {
@@ -156,23 +153,20 @@ section.landing header p {
 
 section.landing nav {
   font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .landing-main {
   text-align: center;
-}
-
-.landing-main h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 5.3rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.landing-main h2 {
-  font-size: 1.5rem;
-  font-weight: 200;
-  margin-bottom: 4rem;
 }
 
 .landing-main button {
@@ -182,6 +176,20 @@ section.landing nav {
 .landing-main .arrow {
   display: block;
   margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 5.3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 200;
   margin-bottom: 5rem;
 }
 
@@ -276,16 +284,28 @@ section.landing nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 25rem;
+  width: 50rem;
+  padding: 0 5rem;
   margin-bottom: 4rem;
+}
+
+.room-option .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .room-option .gold-frame {
   background: transparent;
   border: 1.5px solid #aa7a04;
   position: relative;
-  height: 10rem;
-  width: 15rem;
   border-radius: 2.5px;
   margin-bottom: 2rem;
 }
@@ -451,7 +471,7 @@ footer p span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .footer-last img:first-of-type {
@@ -462,5 +482,81 @@ footer p span {
 .footer-last img:last-of-type {
   width: 10rem;
   margin-top: 2rem;
+  opacity: 0.9;
+}
+
+button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media only screen and (min-width: 550px) {
+  .book-btn,
+  .about-btn {
+    width: 35%;
+    min-width: 20rem;
+  }
+  .big-gap {
+    margin-bottom: 15rem;
+  }
+  .small-gap {
+    margin-bottom: 8rem;
+  }
+  section.landing,
+  .landing-background-mobile,
+  .landing-background-mobile::after {
+    height: 85vh;
+  }
+  h1 {
+    font-size: 8rem;
+    margin-bottom: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+  section.landing button {
+    margin-bottom: 5rem;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 180%;
+  }
+  h3 {
+    font-size: 3.5rem;
+  }
+  .room-option {
+    min-width: 70vw;
+    padding: 0 5rem;
+  }
+  .room-option .gold-frame img {
+    width: 20rem;
+    -webkit-transform: translate(1rem, 1rem);
+            transform: translate(1rem, 1rem);
+  }
+  .room-option .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .room-option p {
+    margin-left: 3rem;
+    font-size: 1.3rem;
+  }
+  .room-option h4 {
+    text-align: right;
+    width: 100%;
+    margin-right: 13rem;
+    font-size: 2.6rem;
+  }
+  .rooms .between {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rooms .book-btn {
+    margin-right: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

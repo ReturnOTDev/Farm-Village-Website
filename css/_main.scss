@@ -1,0 +1,361 @@
+$gold-light: #d6a65d;
+$gold-dark: #aa7a04;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: "Raleway", sans-serif;
+}
+p,
+h1,
+h2,
+button {
+	letter-spacing: 0.075rem;
+}
+p {
+	line-height: 2rem;
+}
+h3,
+h4 {
+	font-family: "Playfair Display", serif;
+	font-size: 3rem;
+	font-weight: normal;
+	margin-bottom: 0.5rem;
+}
+h4 {
+	font-size: 2.5rem;
+	font-family: "Raleway", serif;
+	margin-bottom: 2rem;
+}
+hr {
+	margin: 0 auto;
+	margin-bottom: 2rem;
+	color: $gold-dark;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+.book-btn,
+.about-btn {
+	border: none;
+	border-radius: 2.5px;
+	font-weight: bold;
+	font-size: 1.4rem;
+	color: white;
+	background: $gold-light;
+	width: 47.5%;
+	padding: 0.5rem 0;
+	cursor: pointer;
+}
+#menuBtn {
+	background: 0;
+	border: 0;
+	margin: 0;
+}
+.big-gap {
+	margin-bottom: 10rem;
+}
+.small-gap {
+	margin-bottom: 5rem;
+}
+.between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+// container and background setup
+
+.landing-background-mobile {
+	background-image: url("/assets/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: bottom;
+	height: 95vh;
+	width: 100vw;
+	position: absolute;
+	z-index: -1;
+
+	&::after {
+		content: " ";
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.95));
+		width: 100vw;
+		height: 95vh;
+		position: absolute;
+		z-index: -1;
+	}
+}
+
+// landing page
+
+section.landing {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: white;
+	height: 95vh;
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 4rem;
+
+		.contact-info div {
+			display: flex;
+			align-items: center;
+			opacity: 0.6;
+		}
+		p {
+			margin-left: 1rem;
+		}
+	}
+
+	nav {
+		font-size: 1.4rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+}
+.landing-main {
+	text-align: center;
+
+	button {
+		margin-bottom: 5rem;
+	}
+
+	.arrow {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 5rem;
+	}
+}
+
+h1 {
+	font-family: "Playfair Display", serif;
+	font-size: 5.3rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	line-height: 110%;
+}
+h2 {
+	font-size: 1.5rem;
+	font-weight: 200;
+	margin-bottom: 5rem;
+}
+// main content
+
+.title {
+	text-align: center;
+	p {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+.menu {
+	height: 1.5rem;
+}
+// rooms slider
+
+.rooms {
+	margin-top: 5rem;
+	position: relative;
+	hr {
+		width: 4rem;
+	}
+}
+#roomNext,
+#roomPrev {
+	position: absolute;
+	top: 60%;
+	right: 0;
+	background: 0;
+	border: 0;
+	font-size: 1.5rem;
+	color: $gold-dark;
+}
+#roomPrev {
+	left: 0;
+}
+.about-btn {
+	color: black;
+	font-weight: normal;
+	border: 1.5px solid $gold-dark;
+	background: none;
+}
+.room-carousel-container {
+	margin: 0 auto;
+	overflow: hidden;
+}
+.room-carousel {
+	display: flex;
+}
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.room-option {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50rem;
+	padding: 0 5rem;
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.gold-frame {
+		background: transparent;
+		border: 1.5px solid $gold-dark;
+		position: relative;
+		border-radius: 2.5px;
+		margin-bottom: 2rem;
+		img {
+			width: 15rem;
+			border-radius: 2.5px;
+			transform: translate(0.5rem, 0.5rem);
+		}
+	}
+	margin-bottom: 4rem;
+}
+
+// amenities
+
+.amenities {
+	hr {
+		width: 6rem;
+	}
+}
+.amenity-icons {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.icon-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	img {
+		height: 3rem;
+		margin-bottom: 0.5rem;
+	}
+	p {
+		color: $gold-dark;
+	}
+	margin-bottom: 2rem;
+}
+
+// gallery
+
+.gallery hr {
+	width: 7rem;
+}
+.carousel-container {
+	border-radius: 2.5px;
+	margin: 0 auto;
+	display: flex;
+	overflow: hidden;
+	width: 70vw;
+}
+
+.carousel-slide {
+	display: flex;
+	img {
+		width: 70vw;
+	}
+}
+
+.gallery {
+	position: relative;
+	button {
+		position: absolute;
+		height: 25vw;
+		bottom: 0;
+		background: none;
+		border: none;
+		color: $gold-dark;
+		font-size: 1.5rem;
+	}
+	#nextBtn {
+		right: 5%;
+	}
+	#prevBtn {
+		left: 5%;
+	}
+}
+
+// footer
+
+footer {
+	background-color: #373737;
+	padding: 2rem 0;
+	color: white;
+	p {
+		max-width: 14rem;
+		line-height: 2rem;
+		span {
+			font-weight: bold;
+		}
+		opacity: 0.6;
+	}
+}
+.social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	img {
+		margin-bottom: 2rem;
+		height: 1.5rem;
+		opacity: 0.6;
+		&:last-of-type {
+			margin: 0;
+		}
+	}
+}
+
+.footer-last {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	opacity: 1;
+	img:first-of-type {
+		width: 20rem;
+		margin-top: 2rem;
+	}
+	img:last-of-type {
+		width: 10rem;
+		margin-top: 2rem;
+		opacity: 0.9;
+	}
+}
+
+button:active {
+	transform: scale(0.9);
+}
