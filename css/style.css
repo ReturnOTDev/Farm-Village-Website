@@ -222,12 +222,18 @@ h2 {
   right: 0;
   background: 0;
   border: 0;
-  font-size: 1.5rem;
   color: #aa7a04;
+}
+
+#roomNext img,
+#roomPrev img {
+  width: 1.5rem;
 }
 
 #roomPrev {
   left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .about-btn {
