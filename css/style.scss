@@ -1,77 +1,134 @@
 @import "_main.scss";
 
 @media only screen and (min-width: 550px) {
-	.book-btn,
-	.about-btn {
-		width: 35%;
-		min-width: 20rem;
-	}
-	.big-gap {
-		margin-bottom: 15rem;
-	}
-	.small-gap {
-		margin-bottom: 8rem;
-	}
+  .book-btn,
+  .about-btn {
+    width: 35%;
+    min-width: 20rem;
+  }
+  .big-gap {
+    margin-bottom: 15rem;
+  }
+  .small-gap {
+    margin-bottom: 8rem;
+  }
 
-	section.landing,
-	.landing-background-mobile,
-	.landing-background-mobile::after {
-		height: 85vh;
-	}
+  section.landing,
+  .landing-background-mobile,
+  .landing-background-mobile::after {
+    height: 85vh;
+  }
 
-	h1 {
-		font-size: 8rem;
-		margin-bottom: 2.5rem;
-	}
-	h2 {
-		font-size: 2rem;
-		margin-bottom: 5rem;
-	}
-	section.landing {
-		button {
-			margin-bottom: 5rem;
-		}
-	}
+  h1 {
+    font-size: 8rem;
+    margin-bottom: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+  section.landing {
+    button {
+      margin-bottom: 5rem;
+    }
+  }
 
-	p {
-		font-size: 1.3rem;
-		line-height: 180%;
-	}
-	h3 {
-		font-size: 3.5rem;
-	}
+  p {
+    font-size: 1.3rem;
+    line-height: 180%;
+  }
+  h3 {
+    font-size: 3.5rem;
+  }
 
-	.room-option {
-		min-width: 70vw;
-		padding: 0 5rem;
-		.gold-frame {
-			img {
-				width: 20rem;
-				transform: translate(1rem, 1rem);
-			}
-		}
-		.content {
-			flex-direction: row;
-		}
-		p {
-			margin-left: 3rem;
-			font-size: 1.3rem;
-		}
-		h4 {
-			text-align: right;
-			width: 100%;
-			margin-right: 13rem;
+  .room-option {
+    min-width: 70vw;
+    padding: 0 5rem;
+    .gold-frame {
+      img {
+        width: 20rem;
+        transform: translate(1rem, 1rem);
+      }
+    }
+    .content {
+      flex-direction: row;
+    }
+    p {
+      margin-left: 3rem;
+      font-size: 1.3rem;
+    }
+    h4 {
+      text-align: right;
+      width: 100%;
+      margin-right: 13rem;
 
-			font-size: 2.6rem;
-		}
-	}
+      font-size: 2.6rem;
+    }
+  }
 
-	.rooms {
-		.between {
-			justify-content: center;
-		}
-		.book-btn {
-			margin-right: 2rem;
-		}
-	}
+  .rooms {
+    .between {
+      justify-content: center;
+    }
+    .book-btn {
+      margin-right: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .big-gap {
+    margin-bottom: 20rem;
+  }
+  .small-gap {
+    margin-bottom: 10rem;
+  }
+
+  .landing-background-mobile,
+  .landing-background-mobile::after,
+  section.landing {
+    height: 100vh;
+  }
+
+  .content {
+    width: 60%;
+  }
+  .room-option {
+    min-width: 75rem;
+    justify-content: flex-start;
+    h4 {
+      text-align: left;
+      width: auto;
+      margin-right: 0;
+    }
+  }
+  .between {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .title p {
+    width: 60%;
+  }
+
+  // amenities
+  .amenity-icons {
+    width: 50%;
+    .icon {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .carousel-slide img,
+  .carousel-container {
+    width: 50vw;
+  }
+  .gallery button {
+    height: 100%;
+    bottom: -15vh;
+  }
+
+  footer {
+    padding: 5rem 0;
+  }
 }
